@@ -1,0 +1,149 @@
+:root {
+  --offwhite: #F7F5F2;
+  --black: #0A0A0A;
+  --text: #1A1A1A;
+  --muted: #5C5C5C;
+  --serif: "Libre Baskerville", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--offwhite);
+  color: var(--text);
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 6vw;
+  background: var(--offwhite);
+  z-index: 10;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav-name {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-links a {
+  margin-left: 1.75rem;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover { opacity: 0.6; }
+
+.light { background: var(--offwhite); color: var(--text); }
+.dark {
+  background: var(--black);
+  color: #F5F5F5;
+}
+.dark a { color: #F5F5F5; }
+
+section, header {
+  padding: 8vh 8vw;
+}
+
+.opening h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(4.5rem, 12vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.lede {
+  font-size: 1.35rem;
+  max-width: 32rem;
+  font-weight: 400;
+}
+
+.position p {
+  font-size: 1.25rem;
+  max-width: 38rem;
+  margin-left: 8vw;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.now ul, .elsewhere ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.now li, .elsewhere li {
+  margin-bottom: 0.75rem;
+}
+
+.work article {
+  margin-bottom: 4rem;
+  max-width: 36rem;
+}
+
+.work article.offset {
+  margin-left: 12vw;
+}
+
+.work h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.writing p, .personal p {
+  max-width: 40rem;
+  font-size: 1.15rem;
+}
+
+.links a {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.1em;
+  transition: opacity 0.2s;
+}
+
+.links a:hover { opacity: 0.6; }
+
+footer {
+  padding: 3rem 8vw;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 700px) {
+  nav { padding: 1rem 5vw; }
+  .nav-links a { margin-left: 1rem; font-size: 0.9rem; }
+  section, header { padding: 6vh 5vw; }
+  .opening h1 { font-size: clamp(3.2rem, 15vw, 5rem); }
+  .position p { margin-left: 0; }
+  .work article.offset { margin-left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  html { scroll-behavior: auto; }
+}
