@@ -7,7 +7,7 @@
   <meta name="description" content="Superfly — personal brand, taste, and thinking.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,10 +23,11 @@
 
   <main id="top">
     <header class="opening light">
-      <div class="opening-inner">
-        <img src="https://avatars.githubusercontent.com/u/251874226?v=4" alt="Superfly" class="pfp" width="56" height="56">
-        <h1>Superfly</h1>
+      <div class="opening-top">
+        <img src="https://avatars.githubusercontent.com/u/251874226?v=4" alt="Superfly" class="pfp">
+        <span class="eyebrow">Personal</span>
       </div>
+      <h1>Superfly</h1>
       <p class="lede">Builder. Content creator. Thinking out loud about taste, tools, and what gets made.</p>
     </header>
 
@@ -35,8 +36,11 @@
     </section>
 
     <section id="now" class="now dark">
-      <div class="now-grid">
-        <h2>Now</h2>
+      <div class="now-layout">
+        <div>
+          <span class="section-label">Current</span>
+          <h2>Now</h2>
+        </div>
         <ul>
           <li><span class="label">Working</span> [Placeholder] Currently working on...</li>
           <li><span class="label">Learning</span> [Placeholder] Learning...</li>
@@ -46,32 +50,38 @@
     </section>
 
     <section id="work" class="work light">
+      <span class="section-label">Evidence</span>
       <h2>Selected</h2>
-      <article>
-        <span class="meta">01</span>
-        <h3>[Placeholder project or piece]</h3>
-        <p>A short note on why it exists and what it shows about the approach.</p>
-      </article>
-      <article class="offset">
-        <span class="meta">02</span>
-        <h3>[Another selected piece]</h3>
-        <p>Presented as evidence of thinking rather than a portfolio grid.</p>
-      </article>
+      <div class="work-list">
+        <article>
+          <span class="meta">01</span>
+          <h3>[Placeholder project or piece]</h3>
+          <p>A short note on why it exists and what it shows about the approach.</p>
+        </article>
+        <article class="offset">
+          <span class="meta">02</span>
+          <h3>[Another selected piece]</h3>
+          <p>Presented as evidence of thinking rather than a portfolio grid.</p>
+        </article>
+      </div>
     </section>
 
     <section id="writing" class="writing light">
       <div class="writing-inner">
+        <span class="section-label">Ideas</span>
         <h2>Notes</h2>
         <p>[Placeholder] Links or short excerpts from writing, ideas, or selected posts. Keep the voice consistent.</p>
       </div>
     </section>
 
     <section class="personal light">
+      <span class="section-label">Person</span>
       <h2>Details</h2>
       <p>[Placeholder] Personal interests or observations that make the person concrete. Short and specific.</p>
     </section>
 
     <section id="elsewhere" class="elsewhere dark">
+      <span class="section-label">Links</span>
       <h2>Elsewhere</h2>
       <ul class="links">
         <li><a href="https://x.com/iamsuperflly" target="_blank" rel="noopener">X</a></li>
